@@ -13,4 +13,5 @@ function fora() {
 
 const minhaFuncao = fora()
 console.log(minhaFuncao()) 
-//Acesso a variável de um contexto diferente, mas guarda consigo a sua origem que no exemplo é x = Global
+//Acesso a variável de um contexto diferente, mas guarda consigo a sua origem.
+//Além do acesso a função, tem acesso também ao escopo em que foi declarada a função.

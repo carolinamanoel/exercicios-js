@@ -4,7 +4,6 @@ const sequencia = {
     set valor(valor) { 
         if(valor > this._valor) {
             this._valor = valor
-            
         }
     }
 }
