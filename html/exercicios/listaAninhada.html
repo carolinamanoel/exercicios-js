@@ -2,10 +2,10 @@
 
 <ul class="tree">
     <li>
-        backend
+        <span wm-folder>backend</span>
         <ul>
             <li>
-                app
+                <span wm-folder>app</span>
                 <ul>
                     <li>produto.js</li>
                     <li>usuário.js</li>
@@ -13,7 +13,7 @@
                 </ul>
             </li>
             <li>
-                config
+                <span wm-folder>config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -23,16 +23,40 @@
         </ul>
     </li>
     <li>
-        frontedn
+        <span wm-folder>frontedn</span>
         <ul>
-            public
-            <ul>
-                <li>app.css</li>
-                <li>app.js</li>
-                <li>index.html</li>
-            </ul>
+            <li>
+                <span wm-folder>public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling //pegar o próximo elemento depois do folder, que é a pasta
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
+
+<!-- 
+    function MudaPrincipal(el) {
+    var display = document.getElementById(el).style.display;
+    if(display == "none")
+        document.getElementById(el).style.display = 'block';
+    else
+        document.getElementById(el).style.display = 'none';
+    }
+
+    <div id="minhaDiv">Conteudo</div>
+    <button type="button" onclick="Mudarestado('minhaDiv')">Mostrar / Esconder</button>
+-->
