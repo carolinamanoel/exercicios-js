@@ -7,7 +7,7 @@
     </p>
             
     <p>
-        <img src="http:files.cod3r.com.br/curso-web/imagem2.gif"
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
             alt="Intro Cod3r" height="342">
     </p>
             
@@ -83,6 +83,7 @@
     // mover(p, 1500, -520, 5, () => {
     //        console.log('Terminou!!!')
     // })
+
     function slider() {
         const elementos = document.querySelectorAll('[wm-slider] > p')
         const slides = Array.from(elementos)        
@@ -93,7 +94,7 @@
         slide.style.display = 'block'
 
         const inicio = innerWidth //largura da página
-        const fim = -slide.clientWidth 
+        const fim = -slide.clientWidth
 
         slide.style.left = `${inicio}px`
 
