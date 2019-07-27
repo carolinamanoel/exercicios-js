@@ -13,5 +13,8 @@ let ola = function () {
     return 'Olá'
 }
 
-ola = () => 'Olá' //Função sem parâmetro
+ola = () => {
+    let Saudacao = 'Bom dia'
+    return 'Olá'
+} //Função sem parâmetro
 console.log(ola())
