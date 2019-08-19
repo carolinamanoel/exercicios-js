@@ -1,4 +1,4 @@
-function fatorial(quantidade) {
+fatorial = quantidade => {
     multiplicacao = 1
     // multiplicacao *= 2  
     // multiplicacao *= 3  
