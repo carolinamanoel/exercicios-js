@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Lista de compras</title>
+    </head>
+    <body>
+        <header>
+            <h1>Lista de compras</h1>
+        </header>
+    </body>
+    
+    <label for = ""> Digite o item que gostaria de adicionar à lista: </label>
+    <br/> <br/>
+    <input type="text" id="novoitem">
+    <!-- <textarea name="listacompras" id="listacompras" cols="30" rows="10"></textarea> -->
+    
+<!--    <div id="lista">
+        <span>
+            Tarefa 1
+            Toda vez que adc um item, será nessa div (lista)
+        </span>
+    </div>
+
+    function adicionarItem(texto) {
+	itens.push(texto);
+	console.log("Itens: ", itens)
+}
+-->
+
+    <script>
+        function adicionarItem(textarea) {
+            const itens = [];
+            itens.push(textarea);
+            
+            //novoitem = document.getElementById('novoitem').value;
+            //lista = document.getElementById('listacompras').value;
+            //document.getElementById('listacompras').value = label + "<br>" + novoitem;
+        }   
+    </script>
+    
+    <button id="adicionar" onclick="adicionarItem();">Adicionar</button>    
+
+</html>
+<!-- Deixar os itens adicionados com a opção de check
+    <div>
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">Item 1</label>
+    </div>
+-->
+<style>
+    body
+    {
+        text-align: center;
+        background-color: #8EE5EE;
+    }
+</style>
