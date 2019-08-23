@@ -10,8 +10,11 @@
     
     <label for = ""> Digite o item que gostaria de adicionar à lista: </label>
     <br/> <br/>
-    <input type="text" id="novoitem">
-    <!-- <textarea name="listacompras" id="listacompras" cols="30" rows="10"></textarea> -->
+    <input type="text" id="novoitem"> 
+    <br/> <br/>
+    <!--<label for="listacompras"> </label> -->
+    <textarea name="listacompras" id="listacompras" cols="20" rows="5"></textarea>
+    
     
 <!--    <div id="lista">
         <span>
@@ -27,17 +30,19 @@
 -->
 
     <script>
-        function adicionarItem(textarea) {
-            const itens = [];
-            itens.push(textarea);
-            
+        const item = [];
+        item = document.getElementById('novoitem').value;
+        
+        function adicionarItem(item) {
+            document.getElementById('listacompras').push(item);
+        }
             //novoitem = document.getElementById('novoitem').value;
             //lista = document.getElementById('listacompras').value;
             //document.getElementById('listacompras').value = label + "<br>" + novoitem;
-        }   
     </script>
     
-    <button id="adicionar" onclick="adicionarItem();">Adicionar</button>    
+    <br/> <br/>
+    <button id="adicionar" onclick="adicionarItem();"> Adicionar</button>    
 
 </html>
 <!-- Deixar os itens adicionados com a opção de check

@@ -4,6 +4,6 @@ function adicionarItem(texto) {
     itens.push(texto);
 }
 
-adicionarItem('Comprar macarrão')
-adicionarItem('Comprar arroz')
+adicionarItem('Comprar carne')
+adicionarItem('Comprar feijão')
 console.log(itens)
