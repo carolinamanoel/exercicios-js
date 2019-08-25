@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Lista de compras</title>
+    </head>
+    <body>
+        <header>
+            <h1>Lista de compras</h1>
+        </header>
+    </body>
+    
+    <label for = ""> Digite o item que gostaria de adicionar à lista: </label>
+    <br/> <br/>
+    
+    <input type="text" id="novoitem"> 
+    <br/> <br/>
+
+    <button id="adicionar" onclick="adicionarItem();" >Adicionar</button>    
+    
+    <br><br>
+
+    <div id="listaTarefas" class="lista-tarefas"></div>    
+
+    <script>
+        let lista = [];
+        let listaHTML = [];
+
+        function adicionarItem() {
+          lista.push(document.getElementById('novoitem').value)
+
+          mostrarLista()
+        }
+
+        function remover(id) {
+          lista.splice(id, 1)
+
+          mostrarLista()
+        }
+
+        function mostrarLista() {
+          listaHTML = []
+
+          for (i = 0; i<lista.length; i++) {
+            listaHTML.push(`
+              <div>
+                <input type="checkbox">
+                ${lista[i]}
+                <button id="button" onclick="remover(${i})">x</button>
+              </div>`)
+          }
+
+          document.getElementById('listaTarefas').innerHTML = listaHTML.join('');
+        }
+
+    </script>
+    
+    <br/> <br/>
+
+</html>
+
+<style>
+  body {
+    text-align: center;
+    background-color: #8EE5EE;
+  }
+
+  .lista-tarefas {
+    display: inline-grid;   
+  }
+</style>
