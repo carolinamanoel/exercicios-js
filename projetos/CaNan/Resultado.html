@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>CaNan</title>
+    </head>
+
+    <body>
+        <h1>Sua pontuação foi de: <br><span id="Pontos"></span> pontos. </h1>
+        <br><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> Pontos </th>
+                    <th> Prendas </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 10 - 8</td>
+                    <td> Surpresa 1</td>
+                </tr>
+                <tr>
+                    <td> 7 - 5</td>
+                    <td> Surpresa 2</td>
+                </tr>
+                <tr>
+                    <td> 4 - 0</td>
+                    <td> Supresa 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+    <script>
+        document.getElementById('Pontos').innerHTML = localStorage.pontos;
+    </script>
+</html>
+
+<style>
+    body {
+        text-align: center;
+        background-color: #E066FF;
+        margin-top: 90px;
+    }
+
+    table, th, td {
+    border: 1px solid black;
+    }
+    
+    table {
+	border-collapse: collapse;
+	width: 600px;
+    margin-left: 330px;
+    }
+
+    tr, th, td {
+	padding: 5px 40px 5px 4px;
+	text-align: left;
+    }
+
+    th, tr, td {
+	border: 0.1em solid #696969;	
+    }
+    
+    th {
+	background-color: #EEAEEE;
+    }
+</style>

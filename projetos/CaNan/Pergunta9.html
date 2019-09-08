@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CaNan</title>
+    </head>
+    <body>
+        <br>
+        <h1> O que comemoramos neste dia?</h1>
+        <img src="img/Fotos 4 - 3.jpg" width="250" height="350" id="Pergunta10">
+        <br><br>
+
+        <h2>Pontuação atual: <span id="Pontos"></span> </h2>
+        
+        <input type="radio" name="comemorar" value="Opcao1" id="Opcao1"> Meu aniversário.
+        <br>
+        <input type="radio" name="comemorar" value="Opcao2" id="Opcao2"> Nosso aniversário de namoro.
+        <br>
+        <input type="radio" name="comemorar" value="Opcao3" id="Opcao3"> Dia dos namorados.
+        <br>
+        <input type="radio" name="comemorar" value="Opcao4" id="Opcao4"> Seu aniversário.
+        <br><br>
+        
+        <button id="Proxima" onclick="Proxima();" >Próxima pergunta</button>         
+        <br><br>
+
+    </body>
+
+    <script>
+        document.getElementById('Pontos').innerHTML = localStorage.pontos;
+
+        function Proxima() {
+            if (document.getElementById('Opcao3').checked === true) {
+                localStorage.pontos = (+localStorage.pontos) + 1;
+                window.location.href = "PaginaAcerto9.html";
+                //window.location.replace('PaginaAcerto.html');
+                //window.open('PaginaAcerto.html');
+            } else {
+                window.location.href = "PaginaErro9.html";
+            }
+        }
+    </script>
+</html>
+
+<style>
+    body {
+        text-align: center;
+        background-color: #E066FF;
+    }
+
+    button {
+        width: 150px;
+        height: 20px;
+        border-radius: 3px;
+	    border-bottom-style: solid;
+	    border-top-color: #87CEEB;
+	    border-right-color:#87CEEB;
+	    border-bottom-color: #87CEEB;
+	    border-left-color: #87CEEB;
+	    background-color: #87CEEB;
+        color: black;
+    }
+</style>

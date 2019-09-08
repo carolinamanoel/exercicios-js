@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CaNan</title>
+    </head>
+    <body>
+        <br>
+        <h1>Qual é a minha preferida?</h1>
+        <br>
+
+        <h2>Pontuação atual: <span id="Pontos"></span> </h2>
+        <div class="box">
+            <img src="img/Fotos 4 - 1.jpg" width="200" height="300" id="Foto1"> 
+            <br>
+            <input type="radio" name="grupo-foto-preferida" value="Opcao1" id="Opcao1">
+            <br>
+        </div>
+
+        <div class="box">
+            <img src="img/Fotos 4 - 2.jpg" width="200" height="300" id="Foto2"> 
+            <br>
+            <input type="radio" name="grupo-foto-preferida" value="Opcao2" id="Opcao2">
+            <br>
+        </div>
+
+        <div class="box">
+            <img src="img/Fotos 4 - 3.jpg" width="200" height="300" id="Foto3"> 
+            <br>
+            <input type="radio" name="grupo-foto-preferida" value="Opcao3" id="Opcao3">
+            <br>
+        </div>
+
+        <div class="box">
+            <img src="img/Fotos 4 - 4.jpg" width="200" height="300" id="Foto4"> 
+            <br>
+            <input type="radio" name="grupo-foto-preferida" value="Opcao4" id="Opcao4">
+            <br>
+        </div>
+        <br><br><br>
+        <button id="Proxima" onclick="Proxima();" >Próxima pergunta</button>         
+
+    </body>
+
+    <script>
+        document.getElementById('Pontos').innerHTML = localStorage.pontos;
+
+        function Proxima() {
+            if (document.getElementById('Opcao4').checked === true) {
+                localStorage.pontos = (+localStorage.pontos) + 1;
+                window.location.href = "PaginaAcerto4.html";
+                //window.location.replace('PaginaAcerto.html');
+                //window.open('PaginaAcerto.html');
+            } else {
+                window.location.href = "PaginaErro4.html";
+            }
+        }
+    </script>
+</html>
+
+<style>
+    body {
+        text-align: center;
+        background-color: #E066FF;
+    }
+
+    button {
+        width: 150px;
+        height: 20px;
+        border-radius: 3px;
+	    border-bottom-style: solid;
+	    border-top-color: #87CEEB;
+	    border-right-color:#87CEEB;
+	    border-bottom-color: #87CEEB;
+	    border-left-color: #87CEEB;
+	    background-color: #87CEEB;
+        color: black;
+    }
+
+    .box {
+	width: 150px;
+	display: inline-block;
+    margin: 0px 60px;
+}
+</style>
