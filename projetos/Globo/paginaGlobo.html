@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>globo.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="shortcut icon" href="globo.ico" type="image/x-icon"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            background-color: white;
+            border-bottom: solid 1px #D3D3D3;
+        }
+
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0px 50px;
+            height: 100px;
+        }
+
+        .menu {
+            flex-grow: 10;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0px 10px;
+        }
+
+        .busca {
+            margin: 0px 10px;
+            color: #8B8682;
+        }
+
+        .logo {
+            color: blue;
+        }
+
+        #buscar {
+            color: #8B8682; 
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>globo.com</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#g1">g1</a>
+                </li>
+                <li>
+                    <a href="#ge">ge</a>
+                </li>
+                <li>
+                    <a href="#gshow">gshow</a>
+                </li>
+                <li>
+                    <a href="#tech">tech</a>
+                </li>
+                <li>
+                    <a href="#videos">vídeos</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="busca">
+            <label for="assine">ASSINE JÁ</label>
+            <label for="conta">MINHA CONTA</label>
+            <label for="email">E-MAIL</label>
+            <textarea name="busca" id="buscar" cols="25" rows="1">encontre na globo.com</textarea>
+            <button>Buscar</button>
+        </aside>
+    </header>
+    <div>
+        <img src="honda.jpg" width="600" height="300">
+    </div>
+</body>
+
+</html>
