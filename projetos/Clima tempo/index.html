@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="clima-tempo.ico" type="image/x-icon"/>
+    <title>Climatempo</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="options">
+            <a href="" class="link-page previsao">Previsão do tempo</a>
+            <a href="" class="link-page chuva">Chuva</a>
+            <a href="" class="link-page mapas">Mapas</a>
+            <a href="" class="link-page videos">Vídeos</a>
+            <a href="" class="link-page noticias">Notícias</a>
+            <a href="" class="link-page produtos">Produtos</a>
+            <a href="" class="link-page canais">Canais</a>
+            <svg class="icone" style="width:32px;height:32px" viewBox="0 0 24 24">
+                <path fill="#0669DE" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
+            </svg>
+            <a href="" class="link-page pesquisar">Login</a>
+    </div>
+    <div class="sub-bar">
+        <a href="" class="home">Home</a>
+        <img src="/dist/images/3tm.png" alt="">
+    </div>
+</body>
+
+<style>
+    body {
+	    margin: 0px;
+		font-family: Roboto-regular;
+	}
+
+    .top-bar {
+        background-color: #0080cd;
+        height: 90px;
+    }
+
+    .top-bar > .options {
+		display: flex;
+		align-items: center;
+	}
+
+    .top-bar > .options > .link-page {
+		font-size: 18px;
+        margin-top: 30px;
+    	text-decoration: unset;
+		padding: 0px 10px;
+        color: white;
+	}
+
+    .top-bar > .options > .icone {
+        margin-top: 30px;
+    }
+
+    .sub-bar {
+        background-color: #004983;
+        height: 30px;
+    }
+</style>
+</html>
