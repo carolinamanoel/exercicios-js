@@ -7,7 +7,14 @@
 </head>
 <body>
     <div class="top-bar">
-        <div class="options">
+        <div class="menu">
+            <svg class="toggle" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#FFFAFA" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            </svg>
+            <img src="https://www.climatempo.com.br/dist/images/logo-climatempo-stormgeo.png" alt="">
+        </div>
+        
+        <div class="links">
             <a href="" class="link-page previsao">Previsão do tempo</a>
             <a href="" class="link-page chuva">Chuva</a>
             <a href="" class="link-page mapas">Mapas</a>
@@ -15,18 +22,220 @@
             <a href="" class="link-page noticias">Notícias</a>
             <a href="" class="link-page produtos">Produtos</a>
             <a href="" class="link-page canais">Canais</a>
+        </div>
+
+        <div class="login">
             <svg class="icone" style="width:32px;height:32px" viewBox="0 0 24 24">
-                <path fill="#0669DE" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
+                    <path fill="#FFFAFA" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
             </svg>
-            <a href="" class="link-page pesquisar">Login</a>
+            <a href="" class="entrar">Login</a>
+        </div>
     </div>
+
     <div class="sub-bar">
-        <a href="" class="home">Home</a>
-        <img src="/dist/images/3tm.png" alt="">
+        <div class="home"> 
+            <a href="" class="inicio">Home</a>    
+        </div>   
+        <div class="tempo">
+            <img class="img-tempo" src="https://www.climatempo.com.br/dist/images/2r.png" alt="" width="20" height="20">
+            <a href="" class="sv">São Vicente, SP / 17º</a>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <div class="bloco1">
+            <div class="tempo-agora">
+                <span class="agora">TEMPO AGORA EM</span> <br><br>
+                <a href="" class="saovicente">São Vicente, SP </a> <br>
+                <div class="tempo">
+                    <img src="https://www.climatempo.com.br/dist/images/2r.png" alt="" width="90" height="90">
+                    <h3 class="temperatura">21º <br>Muitas nuvens</h3> <br>
+                </div>
+                <div class="detalhes">
+                    <span>Sensação <br> 21º</span> <br>
+                    
+                    <span>Umidade <br>63%</span> <br>
+    
+                    <span>Pressão <br>987 hPa</span> <br>
+    
+                    <span>Vento <br>17 km/h</span> <br>
+                </div>
+                <span class="atualizacao">Atualizado às 10:47h</span>
+            </div>
+            <div class="ultimas-noticias">
+                <div class="imagem-tempo">
+                    <img align="left" class="imagem" src="https://imagens.climatempo.com.br/climapress/galeria/2018/05/105364c350b610ace2cb70ab70e05397.jpg" alt="">
+                </div>
+
+                <div class="escritas">
+                    <span class="ultimas">ÚLTIMAS NOTÍCIAS</span> <br><br>
+                    <a href="" class="frente-fria">Frente fria muda o tempo no litoral sul da Bahia</a><br>
+                    <span class="rajadas">Rajadas de vento e queda de temperatura são observadas na região</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tempo-dias">
+            <div class="hoje">
+            </div>
+
+            <div class="amanha">
+            </div>
+
+            <div class="quarta">
+            </div>
+        </div>
     </div>
 </body>
 
 <style>
+
+    .conteudo > .bloco1 > .ultimas-noticias > .imagem-tempo > .imagem {
+        height: 270px;
+        width: 350px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas {
+        padding-left: 20px;
+    }
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .frente-fria {
+        font-size: 27px;
+        color: #004983;
+        display: flex;
+        justify-content: start;
+        text-decoration: unset;
+        font-weight: bold;
+        text-align: left;
+        padding: 15px 10px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .ultimas {
+        font-size: 14px;
+        color: #707070;
+        font-weight: bold;
+        display: flex;
+        justify-content: start;
+        padding: 0px 10px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .rajadas {
+        font-size: 15px;
+        color: #707070;
+        font-weight: bold;
+        display: flex;
+        justify-content: start;
+        text-align: left;
+        padding: 0px 10px;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .tempo > .temperatura {
+        font-size: 25px;
+        color: #707070;
+        font-weight: bold;
+        text-align: center;
+    }
+    .conteudo > .bloco1 > .tempo-agora {
+        padding-left: 15px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias {
+        padding-left: 15px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .agora {
+        font-size: 14px;
+        color: #707070;
+        font-weight: bold;
+
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .tempo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 15px;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .detalhes {
+        display: flex;
+        justify-content: space-around;
+        color: #707070;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .atualizacao {
+        display: flex;
+        justify-content: flex-end;
+        color: #707070;
+        padding-top: 20px;  
+        padding-right: 30px;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .saovicente {
+        color: #0080cd;
+        font-size: 23px;
+        text-decoration: unset;
+        font-weight: bold;
+
+    }
+
+    .conteudo > .bloco1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora {
+        background-color: #E8E8E8;
+        height: 290px;
+        width: 385px;
+        margin-left: 75px;
+        margin-top: 20px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias {
+        background-color: #E8E8E8;
+        height: 290px;
+        width: 725px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    .conteudo > .tempo-dias {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteudo > .tempo-dias > .hoje {
+        background-color: #EEE9E9;
+        height: 150px;
+        width: 400px;
+        margin-left: 75px;
+        margin-top: 20px;
+    }
+
+    .conteudo > .tempo-dias > .amanha {
+        background-color: #EEE9E9;
+        height: 150px;
+        width: 360px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .conteudo > .tempo-dias > .quarta {
+        background-color: #EEE9E9;
+        height: 150px;
+        width: 360px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
     body {
 	    margin: 0px;
 		font-family: Roboto-regular;
@@ -34,15 +243,23 @@
 
     .top-bar {
         background-color: #0080cd;
-        height: 90px;
+        height: 85px;
+        display: flex;
+		justify-content: space-around; 
+        align-items: center;
     }
 
-    .top-bar > .options {
-		display: flex;
-		align-items: center;
-	}
-
-    .top-bar > .options > .link-page {
+    .sub-bar {
+        background-color: #004983;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    
+    .top-bar > .links > .link-page {
 		font-size: 18px;
         margin-top: 30px;
     	text-decoration: unset;
@@ -50,13 +267,35 @@
         color: white;
 	}
 
-    .top-bar > .options > .icone {
+    .sub-bar > .home > .inicio {
+        font-size: 18px;
         margin-top: 30px;
+    	text-decoration: unset;
+        color: white;
     }
 
-    .sub-bar {
-        background-color: #004983;
-        height: 30px;
+    .sub-bar > .tempo > .sv {
+		font-size: 18px;
+        margin-top: 30px;
+    	text-decoration: unset;
+        color: white;
+    }
+
+    .top-bar > .login {
+        display: flex;
+        align-items: center;
+    }
+
+    .top-bar > .login > .entrar {
+        font-size: 18px;
+    	text-decoration: unset;
+		padding: 0px 10px;
+        color: white;
+	}
+
+    .top-bar > .menu  {
+        display: flex;
+        align-items: center;
     }
 </style>
 </html>
