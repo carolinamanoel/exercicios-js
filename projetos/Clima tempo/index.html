@@ -62,6 +62,7 @@
                 </div>
                 <span class="atualizacao">Atualizado às 10:47h</span>
             </div>
+
             <div class="ultimas-noticias">
                 <div class="imagem-tempo">
                     <img align="left" class="imagem" src="https://imagens.climatempo.com.br/climapress/galeria/2018/05/105364c350b610ace2cb70ab70e05397.jpg" alt="">
@@ -77,80 +78,139 @@
 
         <div class="tempo-dias">
             <div class="hoje">
+                <div>
+                    <img class="img" align="left" src="https://www.climatempo.com.br/dist/images/4r.png" alt="" width="70" height="70">    
+                </div>
+                <div class="hoje-escrita">
+                    <span class="principal">Hoje</span><br>
+                    <span class="model">Máxima 23° - Mínima 13°</span><br>
+                    <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                    <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                    <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                    <span class="model">5 mm</span>
+                </div>
             </div>
 
             <div class="amanha">
+                <div>
+                    <img class="img" align="left" src="https://www.climatempo.com.br/dist/images/5.png" alt="" width="70" height="70">
+                </div>
+                <div class="amanha-escrita">
+                        <span class="principal">Amanhã</span><br>
+                        <span class="model">Máxima 20° - Mínima 16°</span><br>
+                        <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                        <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                        <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                        <span class="model">10 mm</span>
+                </div>
             </div>
 
-            <div class="quarta">
+            <div class="sexta">
+                <div>
+                    <img class="img" align="left" src="https://www.climatempo.com.br/dist/images/5.png" alt="" width="70" height="70">
+                </div>
+                <div class="sexta-escrita">
+                    <span class="principal">Sexta</span><br>
+                    <span class="model">Máxima 21° - Mínima 15°</span><br>
+                    <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                    <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                    <img src="https://www.climatempo.com.br/dist/images/gota-azul.png" alt="" width="15" height="15">
+                    <span class="model">2 mm</span>
+                </div>
             </div>
         </div>
     </div>
 </body>
 
 <style>
+    body {
+	    margin: 0px;
+		font-family: Roboto-regular;
+	}
 
-    .conteudo > .bloco1 > .ultimas-noticias > .imagem-tempo > .imagem {
-        height: 270px;
-        width: 350px;
-    }
-
-    .conteudo > .bloco1 > .ultimas-noticias > .escritas {
-        padding-left: 20px;
-    }
-    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .frente-fria {
-        font-size: 27px;
-        color: #004983;
+    .top-bar {
+        background-color: #0080cd;
+        height: 85px;
         display: flex;
-        justify-content: start;
-        text-decoration: unset;
-        font-weight: bold;
-        text-align: left;
-        padding: 15px 10px;
+		justify-content: space-around; 
+        align-items: center;
     }
 
-    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .ultimas {
-        font-size: 14px;
-        color: #707070;
-        font-weight: bold;
+    .top-bar > .menu  {
         display: flex;
-        justify-content: start;
-        padding: 0px 10px;
+        align-items: center;
     }
+    
+    .top-bar > .links > .link-page {
+		font-size: 18px;
+        margin-top: 30px;
+    	text-decoration: unset;
+		padding: 0px 10px;
+        color: white;
+	}
 
-    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .rajadas {
-        font-size: 15px;
-        color: #707070;
-        font-weight: bold;
+    .top-bar > .login {
         display: flex;
-        justify-content: start;
-        text-align: left;
-        padding: 0px 10px;
+        align-items: center;
     }
 
-    .conteudo > .bloco1 > .tempo-agora > .tempo > .temperatura {
-        font-size: 25px;
-        color: #707070;
-        font-weight: bold;
-        text-align: center;
+    .top-bar > .login > .entrar {
+        font-size: 18px;
+    	text-decoration: unset;
+		padding: 0px 10px;
+        color: white;
+	}
+
+    .sub-bar {
+        background-color: #004983;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 75px;
+        align-items: center;
     }
+
+    .sub-bar > .home > .inicio {
+        font-size: 18px;
+    	text-decoration: unset;
+        color: white;
+    }
+
+    .sub-bar > .tempo > .sv {
+		font-size: 18px;
+        margin-top: 30px;
+    	text-decoration: unset;
+        color: white;
+    }
+
+    .conteudo > .bloco1 {
+        display: flex;
+        flex-direction: row;
+    }
+
     .conteudo > .bloco1 > .tempo-agora {
+        background-color: #E8E8E8;
+        height: 290px;
+        width: 385px;
+        margin-left: 75px;
+        margin-top: 20px;
         padding-left: 15px;
         padding-top: 15px;
         border-radius: 20px;
-    }
-
-    .conteudo > .bloco1 > .ultimas-noticias {
-        padding-left: 15px;
-        padding-top: 15px;
-        text-align: center;
+        /* box-shadow: */
     }
 
     .conteudo > .bloco1 > .tempo-agora > .agora {
         font-size: 14px;
         color: #707070;
         font-weight: bold;
+    }
 
+    .conteudo > .bloco1 > .tempo-agora > .saovicente {
+        color: #0080cd;
+        font-size: 23px;
+        text-decoration: unset;
+        font-weight: bold;
     }
 
     .conteudo > .bloco1 > .tempo-agora > .tempo {
@@ -158,6 +218,13 @@
         align-items: center;
         justify-content: space-around;
         padding-top: 15px;
+    }
+
+    .conteudo > .bloco1 > .tempo-agora > .tempo > .temperatura {
+        font-size: 25px;
+        color: #707070;
+        font-weight: bold;
+        text-align: center;
     }
 
     .conteudo > .bloco1 > .tempo-agora > .detalhes {
@@ -177,34 +244,55 @@
         padding-right: 30px;
     }
 
-    .conteudo > .bloco1 > .tempo-agora > .saovicente {
-        color: #0080cd;
-        font-size: 23px;
-        text-decoration: unset;
-        font-weight: bold;
-
-    }
-
-    .conteudo > .bloco1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .conteudo > .bloco1 > .tempo-agora {
-        background-color: #E8E8E8;
-        height: 290px;
-        width: 385px;
-        margin-left: 75px;
-        margin-top: 20px;
-    }
-
     .conteudo > .bloco1 > .ultimas-noticias {
         background-color: #E8E8E8;
         height: 290px;
         width: 725px;
         margin-left: 20px;
         margin-top: 20px;
+        padding-left: 15px;
+        padding-top: 15px;
         border-radius: 20px;
+        text-align: center;
+    }
+    
+    .conteudo > .bloco1 > .ultimas-noticias > .imagem-tempo > .imagem {
+        height: 270px;
+        width: 350px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas {
+        padding-left: 20px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .ultimas {
+        font-size: 14px;
+        color: #707070;
+        font-weight: bold;
+        display: flex;
+        justify-content: start;
+        padding: 0px 10px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .frente-fria {
+        font-size: 27px;
+        color: #004983;
+        display: flex;
+        justify-content: start;
+        text-decoration: unset;
+        font-weight: bold;
+        text-align: left;
+        padding: 15px 10px;
+    }
+
+    .conteudo > .bloco1 > .ultimas-noticias > .escritas > .rajadas {
+        font-size: 15px;
+        color: #707070;
+        font-weight: bold;
+        display: flex;
+        justify-content: start;
+        text-align: left;
+        padding: 0px 10px;
     }
 
     .conteudo > .tempo-dias {
@@ -213,89 +301,78 @@
     }
 
     .conteudo > .tempo-dias > .hoje {
-        background-color: #EEE9E9;
-        height: 150px;
-        width: 400px;
+        background-color:#E8E8E8;
+        height: 100px;
+        width: 380px;
         margin-left: 75px;
         margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
     }
 
     .conteudo > .tempo-dias > .amanha {
-        background-color: #EEE9E9;
-        height: 150px;
-        width: 360px;
+        background-color:#E8E8E8;
+        height: 100px;
+        width: 338px;
+        margin-left: 22px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
+    }
+
+    .conteudo > .tempo-dias > .sexta {
+        background-color:#E8E8E8;
+        height: 100px;
+        width: 338px;
         margin-left: 20px;
         margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
     }
 
-    .conteudo > .tempo-dias > .quarta {
-        background-color: #EEE9E9;
-        height: 150px;
-        width: 360px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    
-    body {
-	    margin: 0px;
-		font-family: Roboto-regular;
-	}
-
-    .top-bar {
-        background-color: #0080cd;
-        height: 85px;
-        display: flex;
-		justify-content: space-around; 
-        align-items: center;
+    .conteudo > .tempo-dias > .hoje > div > .img {
+        margin-right: 50px;
     }
 
-    .sub-bar {
-        background-color: #004983;
-        height: 35px;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 5px;
-        padding-left: 75px;
-        padding-right: 75px;
-    }
-    
-    .top-bar > .links > .link-page {
-		font-size: 18px;
-        margin-top: 30px;
-    	text-decoration: unset;
-		padding: 0px 10px;
-        color: white;
-	}
-
-    .sub-bar > .home > .inicio {
-        font-size: 18px;
-        margin-top: 30px;
-    	text-decoration: unset;
-        color: white;
+    .conteudo > .tempo-dias > .amanha > div > .img {
+        margin-right: 50px;
     }
 
-    .sub-bar > .tempo > .sv {
-		font-size: 18px;
-        margin-top: 30px;
-    	text-decoration: unset;
-        color: white;
+    .conteudo > .tempo-dias > .sexta > div > .img {
+        margin-right: 50px;
     }
 
-    .top-bar > .login {
-        display: flex;
-        align-items: center;
+    .conteudo > .tempo-dias > .hoje > .hoje-escrita > .principal {
+        color: #004983;
+        font-size: 17px;
+        font-weight: bold;
     }
 
-    .top-bar > .login > .entrar {
-        font-size: 18px;
-    	text-decoration: unset;
-		padding: 0px 10px;
-        color: white;
-	}
+    .conteudo > .tempo-dias > .amanha > .amanha-escrita > .principal {
+        color: #004983;
+        font-size: 17px;
+        font-weight: bold;
+    }
 
-    .top-bar > .menu  {
-        display: flex;
-        align-items: center;
+    .conteudo > .tempo-dias > .sexta > .sexta-escrita > .principal {
+        color: #004983;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .conteudo > .tempo-dias > .hoje > .hoje-escrita, .amanha-escrita > .model {
+        color: #707070;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .conteudo > .tempo-dias > .sexta > .sexta-escrita > .model {
+        color: #707070;
+        font-size: 17px;
+        font-weight: bold;
     }
 </style>
 </html>
