@@ -1,18 +1,163 @@
 <!DOCTYPE html>
 <html>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icone-pu.ico" type="image/x-icon"/>
     <title>Peixe Urbano</title>
 </html>
 <body>
-    <div class="container">
-        <img src="img/logo_cor_.jpg" alt="" width="180" height="120">
-        <input type="Teste">
+    <div class="top-bar">
+        <img class="logo-peixe" src="img/logo_cor_.jpg" alt="" width="140" height="75">
+        <input class="buscar" type="text">
+        <input class="cidade" type="text">
+        <button class="pesquisa">OK</button>
+        <button class="entrar">ENTRAR</button>
+        <svg class="carrinho-compras" style="width:40px; height:40px" viewBox="0 0 24 24">
+            <path fill="#006acb" d="M16,6V4H8V6M7,18A2,2 0 0,0 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20A2,2 0 0,0 7,18M17,18A2,2 0 0,0 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20A2,2 0 0,0 17,18M7.17,14.75L7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.59 17.3,11.97L21.16,4.96L19.42,4H19.41L18.31,6L15.55,11H8.53L8.4,10.73L6.16,6L5.21,4L4.27,2H1V4H3L6.6,11.59L5.25,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42C7.29,15 7.17,14.89 7.17,14.75Z" />
+        </svg>
+    </div>
+
+    <div class="sub-bar">
+        <div class="options">
+            <a class="padrao" href="">Na cidade</a>
+            <a class="padrao" href="">Viagens</a>
+            <a class="padrao" href="">Produtos</a>
+            <a class="padrao" href="">Cinema</a>
+            <a class="padrao" href="">Restaurante</a>
+            <a class="padrao" href="">Diversão</a>
+            <a class="padrao" href="">Beleza e Fitness</a>
+            <a class="padrao" href="">Serviços</a>
+        </div>
+        <div class="cupons">
+            <a class="padrao-exp" href="">Experiências</a>
+            <a class="padrao" href="">Cupons online</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img class="imagem-comida" src="https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/mkt/5d8a58cfe4b09720b52fbc5a.jpg&w=1200&h=230" alt="">
+        <span class="escrita">Ragazzo <br> coxinha, pizza, lasanha e mais!</span>
     </div>
 </body>
 
+<style>
+    body {
+        margin: 0px;
+        font-family: "Helvetica Neue",Helvetica,Arial,Sans-serif;
+    }
 
-974
+    .top-bar {
+        height: 75px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-bar > .buscar {
+        border: solid 1px #ccc;
+        border-radius: 2px;
+        height: 35px;
+        width: 400px;
+        margin-left: 35px;
+    }
+
+    .top-bar > .cidade {
+        border: solid 1px #ccc;
+        border-radius: 2px;
+        height: 35px;
+        width: 300px;
+    }
+
+    .top-bar > .entrar {
+        height: 38px;
+        width: 90px;
+        font-size: 15px;
+        border-radius: 3px;
+        font-weight: bold;
+        background-color: white;
+        color: #006acb;
+        border-top-color: #006acb;
+	    border-right-color:  #006acb;
+	    border-bottom-color:  #006acb;
+	    border-left-color: #006acb;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .top-bar > .entrar:hover {
+        background-color: #006acb;
+        color: white;
+    }
+
+    .top-bar > .pesquisa {
+        height: 39px;
+        width: 55px;
+        border-radius: 3px;
+        font-weight: bold;
+        background-color: #f60;
+        color: white;
+        border: none;
+        border-top-color:  #f60;
+	    border-right-color:  #f60;
+	    border-bottom-color:  #f60;
+	    border-left-color:  #f60;
+        box-shadow: 0px 0px 0px #f60;
+    }
+
+    .top-bar > .pesquisa:hover {
+        background-color: #FF8C00;
+    }
+
+    .sub-bar {
+        height: 40px;
+        width: 100%;
+        background-color: #006acb;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sub-bar > .options > .padrao {
+        color: white;
+        text-decoration: unset;
+        font-size: 15px;
+    }
+
+    .sub-bar > .cupons > .padrao {
+        color: white;
+        text-decoration: unset;
+        font-size: 15px;
+    }
+
+    .sub-bar > .cupons > .padrao-exp {
+        color: white;
+        text-decoration: unset;
+        padding-right: 15px;
+        font-size: 15px;
+    }
+
+    .banner > .imagem-comida {
+        padding-left: 50px;
+        position: absolute;
+    }
+
+    .banner > .escrita {
+        position: relative;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 130px;
+        text-shadow: -1px -1px #696969;
+    }
+</style>
+
+
+<!-- 974
 75
 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
         <path fill="#000000" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
-</svg>
+</svg> -->
